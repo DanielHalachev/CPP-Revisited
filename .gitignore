@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# Build folder
+/build/
+
+# Skip compile_commands.json, as it is created by CMake
+compile_commands.json
+
+# Skip Clang cache
+.cache/
