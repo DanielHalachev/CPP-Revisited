@@ -39,3 +39,6 @@ compile_commands.json
 
 # Skip Clang cache
 .cache/
+
+#Skip VS Code
+.vscode/
