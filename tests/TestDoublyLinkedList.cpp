@@ -1,6 +1,6 @@
 #define CATCH_CONFIG_MAIN
-#include "catch2/catch_template_test_macros.hpp"
-#include "../include/list/DoublyLinkedList.h"
+#include "catch2/catch_test_macros.hpp"
+#include "DoublyLinkedList.h"
 
 TEST_CASE("Doubly Linked List Tests") {
     SECTION("Empty List") {

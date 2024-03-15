@@ -1,6 +1,6 @@
 #define CATCH_CONFIG_MAIN
-#include "catch2/catch_template_test_macros.hpp"
-#include "../include/list/SinglyLinkedList.h"
+#include "catch2/catch_test_macros.hpp"
+#include "SinglyLinkedList.h"
 
 TEST_CASE("Singly Linked List Tests") {
     SECTION("Empty List") {
