@@ -13,7 +13,7 @@ file(GLOB_RECURSE TEST_LIST LIST_DIRECTORIES false *.cpp)
 add_executable(tests ${TEST_LIST})
 
 # Link the necessary libraries
-target_link_libraries(tests PRIVATE Catch2::Catch2WithMain sorting searching vector tree)
+target_link_libraries(tests PRIVATE Catch2::Catch2WithMain sorting searching vector list tree)
 
 file(GLOB INCLUDE_DIRS "${CMAKE_SOURCE_DIR}/include/*")
 target_include_directories(tests PRIVATE ${INCLUDE_DIRS})

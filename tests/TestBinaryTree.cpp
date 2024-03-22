@@ -4,7 +4,6 @@
 #include "BinaryTree.h"
 
 
-// Test suite for BinaryTree
 TEMPLATE_TEST_CASE("BinaryTree tests", "[BinaryTree]", int) {
   BinaryTree<TestType> testTree;
 

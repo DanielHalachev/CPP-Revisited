@@ -17,13 +17,16 @@ target_include_directories(searching INTERFACE include/searching)
 
 # Add a library, containing only both .h and .cpp, i.e. a static library
 add_library(vector STATIC src/vector/Vector.cpp include/vector/Vector.h)
-target_include_directories(vector PUBLIC include)
+target_include_directories(vector PUBLIC include/vector)
 
 add_library(list INTERFACE)
 target_include_directories(list INTERFACE include/list)
 
 add_library(tree INTERFACE)
 target_include_directories(tree INTERFACE include/tree)
+
+add_library(graph INTERFACE)
+target_include_directories(tree INTERFACE include/graph)
 
 # Add Tests
 add_subdirectory(tests)
@@ -34,4 +37,6 @@ target_link_libraries(main PUBLIC searching)
 target_link_libraries(main PUBLIC vector)
 target_link_libraries(main PUBLIC list)
 target_link_libraries(main PUBLIC tree)
+target_link_libraries(main PUBLIC graph)
+
 
